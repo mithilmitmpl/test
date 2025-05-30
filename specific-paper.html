@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Research by Economics & Finance Society of Manipal</title>
+        <link rel="stylesheet" href="./output.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/niagara-solid" rel="stylesheet">
+        <link href="spstyling.css" rel="stylesheet" />
+    </head>
+    <body class="flex justify-center items-center flex-col">
+        <!--Navbar Starts-->
+        <div class="bg-black w-full h-[80px] flex justify-between items-center pcnav">
+            <img src="./assets/esom_logo_nobyline.png" class="h-[60px] w-[60px] ml-8" style="transform: scale(1.3)"/>
+            <ul class="text-[1.25rem] navbar-list list-none flex justify-center items-center font-Montserrat text-white mr-8">
+                <li class="navbar-gold"><a href='index.html'>Home</a></li>
+                <li class="navbar-gold ml-6"><a href='research.html'>Our Research</a></li>
+                <li class="navbar-gold ml-6"><a href='team.html'>Our Team</a></li>
+                <li class="navbar-gold ml-6"><a href='events.html'>Our Events</a></li>
+                <li class="navbar-gold ml-6"><a href='#'>Be a Member</a></li>
+            </ul>
+        </div>
+        <div class="bg-black w-full h-[80px] flex justify-between items-center phonenav">
+            <img src="./assets/esom_logo_nobyline.png" class="h-[60px] w-[60px] ml-8" style="transform: scale(1.3)"/>
+            <i id='toggleSidebar' class=" fa-solid mr16 cursor-pointer text-[2rem] fa-ellipsis-vertical text-white"></i>
+        </div>
+        <!--Navbar Ends-->
+        <!--Sidebar Starts (for Phone)-->
+        <div id="sidebar" class="max-w-full h-full text-darkblue sidebar flex flex-col justify-center iems-center">
+            <button id="closeSidebar" class="text-white absolute top-4 right-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="font-bold top-20 flex flex-col items-center justify-center mt-40 px-4 text-white font-Montserrat underline gap-[50px]">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Our Research</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="events.html">Our Events</a></li>
+                <li><a href="#">Be A Member</a></li>
+            </ul>
+            <div class="mt-auto mb-16 items-center flex flex-col text-white">
+                <img src="./assets/esom_logo_nobyline.png" class="box150"/>
+                <div class="flex justify-center items-center">
+                    <div class="flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-instagram rem14"></i>
+                    </div>
+                    <div class="ml4 flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-x-twitter rem14"></i>
+                    </div>
+                    <div class="ml4 flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-youtube rem14"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar Ends-->
+        <div class="w-full h-auto flex flex-col justify-center items-center mb-12">
+            <h1 class="text-black font-Outfit font-bold rem3 text-center mt-12 mb-12">ESOM Research Paper 1</h1>
+            <iframe src="./assets/esom_mockpdf.pdf" class="width85 h700 border-0"></iframe>
+        </div>
+        <!--Footer Starts-->
+        <div class="w-full flex flex-col justify-center items-center grayback">
+            <div class='mt16 flex justify-between width90 items-center'>
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./assets/esom_logo_black.png" class="box150"/>
+                    <div class="flex justify-center items-center">
+                        <div class="flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-instagram rem14"></i>
+                        </div>
+                        <div class="ml4 flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-x-twitter rem14"></i>
+                        </div>
+                        <div class="ml4 flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-youtube rem14"></i>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/mahe_logo.png" class="box120" />
+            </div>
+            <div class="mt24 flex rowcol justify-between width85 items-center">
+                <div class="flex flex-col justify-evenly items-center  selfstarter h-auto w-auto">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Home</h1>
+                    <ul class="list-none graytext font-Montserrat md:text-left text-center w-full footer-list">
+                        <li class="footer-list-item"><a href='index.html'>Our Team</a></li>
+                        <li class="footer-list-item"><a href='index.html'>Our Events</a></li>
+                        <li class="footer-list-item"><a href='index.html'>Our Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 w-full text-center md:text-left font-bold">Our Research</h1>
+                    <ul class="list-none graytext font-Montserrat w-full text-center md:text-left footer-list">
+                        <li class="footer-list-item"><a href='research.html'>Research Papers</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Our Team</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='team.html'>Batch of 2025</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Our Events</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='events.html'>Latest Events</a></li>
+                        <li class="footer-list-item"><a href='events.html'>Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left font-bold w-full">Be a Member</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='member.html'>Working Committee</a></li>
+                        <li class="footer-list-item"><a href='member.html'>Management Committee</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb24 mt30 flex w-full h-auto justify-center items-center">
+                <p class="graytext font-Montserrat rem085 text-center">© Copyright 2024. All Trademarks are properties of there respective owners only.</p>
+            </div>
+        </div>
+        <!--Footer Ends-->
+        <script src="./spscript.js"></script>
+    </body>
+</html>

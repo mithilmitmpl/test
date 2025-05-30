@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Economics & Finance Society of Manipal</title>
+        <link rel="stylesheet" href="./output.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Metrophobic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/niagara-solid" rel="stylesheet">
+        <link href="customstyling.css" rel="stylesheet" />
+    </head>
+    <body class="flex justify-center items-center flex-col">
+        <!--Navbar Starts-->
+        <div class="bg-black w-full h-[80px] flex justify-between items-center pcnav">
+            <img src="./assets/esom_logo_nobyline.png" class="h-[60px] w-[60px] ml-8" style="transform: scale(1.3)"/>
+            <ul class="text-[1.25rem] navbar-list list-none flex justify-center items-center font-Montserrat text-white mr-8">
+                <li class="navbar-gold"><a href='index.html'>Home</a></li>
+                <li class="navbar-gold ml-6"><a href='research.html'>Our Research</a></li>
+                <li class="navbar-gold ml-6"><a href='team.html'>Our Team</a></li>
+                <li class="navbar-gold ml-6"><a href='events.html'>Our Events</a></li>
+                <li class="navbar-gold ml-6"><a href='member.html'>Be a Member</a></li>
+            </ul>
+        </div>
+        <div class="bg-black w-full h-[80px] flex justify-between items-center phonenav">
+            <img src="./assets/esom_logo_nobyline.png" class="h-[60px] w-[60px] ml-8" style="transform: scale(1.3)"/>
+            <i id='toggleSidebar' class=" fa-solid mr16 cursor-pointer text-[2rem] fa-ellipsis-vertical text-white"></i>
+        </div>
+        <!--Navbar Ends-->
+        <!--Sidebar Starts (for Phone)-->
+        <div id="sidebar" class="max-w-full h-full text-darkblue sidebar flex flex-col justify-center iems-center">
+            <button id="closeSidebar" class="text-white absolute top-4 right-4">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="font-bold top-20 flex flex-col items-center justify-center mt-40 px-4 text-white font-Montserrat underline gap-[50px]">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Our Research</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="events.html">Our Events</a></li>
+                <li><a href="member.html">Be A Member</a></li>
+            </ul>
+            <div class="mt-auto mb-16 items-center flex flex-col text-white">
+                <img src="./assets/esom_logo_nobyline.png" class="box150"/>
+                <div class="flex justify-center items-center">
+                    <div class="flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-instagram rem14"></i>
+                    </div>
+                    <div class="ml4 flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-x-twitter rem14"></i>
+                    </div>
+                    <div class="ml4 flex cursor-pointer justify-center items-center icon-border-sb">
+                        <i class="fa-brands fa-youtube rem14"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar Ends-->
+        <!--Hero Section Begins-->
+        <div class="hero-sec flex flex-col justify-center items-center mt-8 relative">
+            <div class="hero-bg overflow-x-hidden"></div>
+            <div class="typewriter h-[100px] relative z-1">
+                <span id="typewriter-text" class="text-white hero-text font-bold font-Montserrat"></span>
+            </div>
+            <div class="relative z-1 mt-4">
+                <p class="text-white text-center phonerem font-Montserrat text-[2rem]">The Economics & Finance Society of Manipal</p>
+            </div>
+            <div class="scroll-container mt-16">
+                <div class="scroll-text">
+                    <span>ESOM IS NOW RECRUITING!</span>
+                </div>
+            </div>
+            <div class="w-full h-auto flex justify-center items-center">
+                <button class="scroll-button font-Montserrat font-bold text-[1.1rem]" id="scrollButton">
+                    Know More <span class='text-[0.5rem]'>&#x25BC;</span>
+                </button>
+            </div>
+        </div>
+        <!--Hero Section Ends-->
+        <!--The Bottom 3 Sections will be hidden on devices with width <1000px-->
+        <!--About Our Team Section Starts-->
+        <div class="home-item w-full h-[490px] flex hometabs justify-center items-center mt-16">
+            <div class="w-[50%] hometabs-para h-full bg-white flex flex-col justify-center items-center">
+                <h1 class="font-Outfit font-bold text-black text-[2.5rem] mt-8">ABOUT OUR TEAM</h1>
+                <p class="text-black font-Outfit text-[1.1rem] text-center w-[80%] h-auto mt-4 mb-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dicta sit earum ea quasi, voluptatum nobis odit ut blanditiis, quo repellat similique consequatur neque, reprehenderit ipsam fugit debitis minima omnis.
+                    Deleniti libero numquam commodi neque consequuntur? Quos accusantium adipisci repellendus at dolorum error, possimus veniam cum aut similique quidem perferendis nobis. Blanditiis voluptate accusamus labore optio at unde quo perferendis!
+                    Cupiditate magni corporis totam fugiat, molestiae possimus. Vitae laudantium ipsum repudiandae hic saepe atque voluptates excepturi sed esse, ipsam cumque voluptatibus tempora earum dolorem iure magni eum temporibus possimus velit?
+                </p>
+            </div>
+            <div class="w-[50%] h-full hometabs-image bg-black flex flex-col justify-center items-center">
+                <img src="./assets/esom_team.jpg" class="w-auto h-full bg-cover"/>
+            </div>
+        </div>
+        <!--About Our Team Section Ends-->
+        <!--Our Events Section Starts-->
+        <div class="w-full h-[490px] flex justify-center hometabs items-center">
+            <div class="w-[50%] h-full hometabs-image bg-black flex flex-col justify-center items-center">
+                <img src="./assets/esom_event.jpg" class="w-auto h-full  bg-cover">
+            </div>
+            <div class="w-[50%] h-full hometabs-para bg-red-600 flex-col flex justify-center items-center">
+                <h1 class="font-Outfit font-bold text-white text-[2.5rem] mt-8">
+                    OUR EVENTS
+                </h1>
+                <p class="text-white font-Outfit text-[1.1rem] text-center w-[80%] h-auto mt-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime a, sit et quisquam cupiditate totam perferendis dolorem fuga consequuntur aliquam vitae accusantium blanditiis ratione laboriosam nesciunt esse, ipsa repellendus soluta!
+                    Officia culpa ea tempore amet voluptate dolor beatae eaque soluta quisquam ex repellat iure similique enim id adipisci, suscipit, quidem, earum veritatis nobis. Nobis dolores enim minus soluta velit vero!
+                    Reiciendis error nulla, praesentium asperiores minima alias, ut incidunt placeat omnis aliquid numquam. Excepturi eaque tempora eum corporis deserunt laborum. Provident repudiandae ipsa in nobis aperiam eaque vitae nulla explicabo.
+                </p>
+            </div>
+        </div>
+        <!--Our Events Section Ends-->
+        <!--Our Achievements Section Starts-->
+        <div class="w-full h-[490px] hometabs flex justify-center items-center">
+            <div class="w-[50%] h-full hometabs-para bg-black flex-col flex justify-center items-center">
+                <h1 class="font-Outfit font-bold text-white text-[2.5rem] mt-8">
+                    OUR ACHIEVEMENTS
+                </h1>
+                <p class="text-white font-Outfit text-[1.1rem] text-center w-[80%] h-auto mt-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, omnis. Tempore, nisi ducimus. Nisi aliquid sapiente aliquam aut adipisci id. Sequi nisi harum hic veritatis a quibusdam nemo alias ipsum?
+                    Deleniti deserunt placeat, optio mollitia quasi magnam sapiente similique fuga blanditiis! Alias quia necessitatibus commodi rem architecto nihil eum, velit asperiores cupiditate sequi ut numquam quo cum repellat molestias qui!
+                    Iure fuga laboriosam quisquam, rem quibusdam consequatur labore id possimus. Ea, corrupti vel enim sequi placeat corporis. Distinctio ipsum porro esse officiis, eaque dolore officia sunt laudantium asperiores culpa sequi.
+                </p>
+            </div>
+            <div class="w-[50%] h-full hometabs-image bg-black flex justify-center items-center">
+                <img src="./assets/esom_achievement.jpg" class="w-auto h-full bg-cover" />
+            </div>
+        </div>
+        <!--Our Achievements Section Ends-->
+        <!--The Above 3 Sections will be hidden on devices with width <1000px-->
+        <!--The Bottom 3 Sections will be hidden on devices with width >1000px-->
+        <!--About Our Team Section for Phone Starts-->
+        <div class="flex flex-col justify-center items-center phonetab">
+            <div class="phonetab-image flex justify-center items-center flex-col bg-white">
+                <img src="./assets/esom_team.jpg" class="w-auto h-full bg-cover" />
+            </div>
+            <div class="phonetab-text flex justify-center items-center flex-col bg-white">
+                <h1 class="text-[2rem] font-Outfit font-bold text-black mt-4">ABOUT OUR TEAM</h1>
+                <p class="text-black text-[1rem] text-center font-Outfit w-[90%] h-auto mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti modi cumque, consequatur earum adipisci exercitationem impedit magni. Qui quas officiis voluptate dicta ut labore! Dicta animi quibusdam ullam aut!
+                Obcaecati provident excepturi in adipisci quam dolor reprehenderit? Sit impedit assumenda error exercitationem totam tempore alias consequatur, amet, laboriosam saepe facilis illum eveniet est necessitatibus beatae illo ipsum quisquam reprehenderit.</p>
+            </div>
+        </div>
+        <!--About Our Team Section for Phone Ends-->
+        <!--Our Events Section for Phone Starts-->
+        <div class="flex flex-col justify-center items-center phonetab mt-8">
+            <div class="phonetab-image flex justify-center items-center flex-col bg-white">
+                <img src="./assets/esom_event.jpg" class="w-auto h-full bg-cover" />
+            </div>
+            <div class="phonetab-text flex justify-center items-center flex-col bg-red-600">
+                <h1 class="text-[2rem] font-Outfit font-bold text-white mt-4">OUR EVENTS</h1>
+                <p class="text-white text-[1rem] text-center font-Outfit w-[90%] h-auto mt-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti modi cumque, consequatur earum adipisci exercitationem impedit magni. Qui quas officiis voluptate dicta ut labore! Dicta animi quibusdam ullam aut!
+                Obcaecati provident excepturi in adipisci quam dolor reprehenderit? Sit impedit assumenda error exercitationem totam tempore alias consequatur, amet, laboriosam saepe facilis illum eveniet est necessitatibus beatae illo ipsum quisquam reprehenderit.</p>
+            </div>
+        </div>
+        <!--Our Events Section for Phone Ends-->
+        <!--Our Achievements Section for Phone Starts-->
+        <div class="flex flex-col justify-center items-center phonetab">
+            <div class="phonetab-image flex justify-center items-center flex-col bg-white">
+                <img src="./assets/esom_achievement.jpg" class="w-auto h-full bg-cover" />
+            </div>
+            <div class="phonetab-text flex justify-center items-center flex-col bg-black">
+                <h1 class="text-[2rem] font-Outfit font-bold text-white mt-4">OUR ACHIEVEMENTS</h1>
+                <p class="text-white text-[1rem] text-center font-Outfit w-[90%] h-auto mt-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti modi cumque, consequatur earum adipisci exercitationem impedit magni. Qui quas officiis voluptate dicta ut labore! Dicta animi quibusdam ullam aut!
+                Obcaecati provident excepturi in adipisci quam dolor reprehenderit? Sit impedit assumenda error exercitationem totam tempore alias consequatur, amet, laboriosam saepe facilis illum eveniet est necessitatibus beatae illo ipsum quisquam reprehenderit.</p>
+            </div>
+        </div>
+        <!--Our Achievements Section for Phone Ends-->
+        <!--The Above 3 Sections will be hidden on devices with width >1000px-->
+        <!--Newsletter Section Starts-->
+        <div class="w-full flex flex-col items-center bg-white relative newsl">
+            <h1 class="text-center font-Outfit font-bold rem3 text-black mt-8">Our Newsletter</h1>
+            <div class="w-[80%] h-auto flex justify-center items-center">
+                <h1 class="text-center font-Outfit text-[1.2rem] ">Subscribe to our newsletter to keep on receiving daily updates</h1>
+            </div>
+            <div class="subscribe-button w-[80%] h-auto flex justify-center items-center mt-6 newsletter-input">
+                <input type="text" placeholder="Email" class="text-left ml-2 font-Outfit text-gray-50/[0.6] px-4 py-2 inputbox" />
+                <button id='subB' class="text-center sub-button h-auto text-gray-50/[0.6] mt-6 self-center px-4 py-2 justify-self-center">Subscribe &#x2192;</a>
+            </div>
+            <div id='subscribe-success' class="relative bottom-2 w-full h-auto flex justify-center items-center">
+                <h1 class="text-center font-Outfit font-bold text-[1.5rem] text-green-400 mt-8">Subscribed &#10003;</h1>
+            </div>
+            <div id='subscribe-fail' class="relative bottom-2 w-full h-auto flex justify-center items-center">
+                <h1 class="text-center font-Outfit font-bold text-[1.5rem] text-red-400 mt-10">Invalid Email</h1>
+            </div>
+        </div>
+        <!--Newsletter Section Ends-->
+        <!--Footer Starts-->
+        <div class="w-full flex flex-col justify-center items-center grayback">
+            <div class='mt16 flex justify-between width90 items-center'>
+                <div class="flex flex-col items-center justify-center">
+                    <img src="./assets/esom_logo_black.png" class="box150"/>
+                    <div class="flex justify-center items-center">
+                        <div class="flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-instagram rem14"></i>
+                        </div>
+                        <div class="ml4 flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-x-twitter rem14"></i>
+                        </div>
+                        <div class="ml4 flex cursor-pointer justify-center items-center icon-border">
+                            <i class="fa-brands fa-youtube rem14"></i>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/mahe_logo.png" class="box120" />
+            </div>
+            <div class="mt24 flex rowcol justify-between width85 items-center">
+                <div class="flex flex-col justify-evenly items-center  selfstarter h-auto w-auto">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Home</h1>
+                    <ul class="list-none graytext font-Montserrat md:text-left text-center w-full footer-list">
+                        <li class="footer-list-item"><a href='index.html'>Our Team</a></li>
+                        <li class="footer-list-item"><a href='index.html'>Our Events</a></li>
+                        <li class="footer-list-item"><a href='index.html'>Our Achievements</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 w-full text-center md:text-left font-bold">Our Research</h1>
+                    <ul class="list-none graytext font-Montserrat w-full text-center md:text-left footer-list">
+                        <li class="footer-list-item"><a href='research.html'>Research Papers</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Our Team</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='team.html'>Batch of 2025</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left w-full font-bold">Our Events</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='events.html'>Latest Events</a></li>
+                        <li class="footer-list-item"><a href='events.html'>Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col justify-evenly items-center selfstarter  h-auto w-auto non-phone-margin">
+                    <h1 class="text-black font-Montserrat rem1 text-center md:text-left font-bold w-full">Be a Member</h1>
+                    <ul class="list-none graytext font-Montserrat text-center md:text-left w-full footer-list">
+                        <li class="footer-list-item"><a href='member.html'>Working Committee</a></li>
+                        <li class="footer-list-item"><a href='member.html'>Management Committee</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb24 mt30 flex w-full h-auto justify-center items-center">
+                <p class="graytext font-Montserrat rem085 text-center">© Copyright 2024. All Trademarks are properties of there respective owners only.</p>
+            </div>
+        </div>
+        <!--Footer Ends-->
+        <script src="./script.js"></script>
+    </body>
+</html>

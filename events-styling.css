@@ -1,0 +1,415 @@
+.phonenav {
+    display: flex;
+}
+
+.pcnav {
+    display: none;
+}
+
+.mr16 {
+    margin-right: 20px;
+}
+
+.ml4 {
+    margin-left: 8px;
+}
+
+.ml48 {
+    margin-left: 16px;
+}
+
+@media (max-width: 768px) {
+    .ml48 {
+        margin-left: 13px;
+    }
+}
+
+.ml8 {
+    margin-left: -50px;
+}
+
+.rem1 {
+    font-size: 1.3rem;
+}
+
+.rem14 {
+    font-size: 1rem;
+}
+
+.rem3 {
+    font-size: 3rem;
+}
+
+.mb24 {
+    margin-bottom: 3rem;
+}
+
+.mt16 {
+    margin-top: 2rem;
+}
+
+.rem085 {
+    font-size: 0.85rem;
+}
+
+.mt24 {
+    margin-top: 1.5rem;
+}
+
+.rem15 {
+    font-size: 1.3rem;
+}
+
+.mt30 {
+    margin-top: 3rem
+}
+
+.grayback {
+    background-color: rgba(205,205,205,0.2);
+}
+
+.center {
+    justify-content: center;
+}
+
+.hero-head {
+    font-size: 2.5rem;
+}
+
+.width90 {
+    width: 90vw;
+}
+
+.width85 {
+    width: 85vw;
+}
+
+.rem12 {
+    font-size: 1.2rem;
+}
+
+.footer-list {
+    margin-top: 6px;
+}
+
+.footer-list-item {
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.footer-list-item:hover {
+    color: black;
+}
+
+.rowcol {
+    flex-direction: column;
+}
+
+@media (min-width: 769px) {
+
+    .center {
+        justify-content: space-between;
+    }
+
+    .hero-head {
+        font-size: 3rem;
+    }
+
+    .rowcol {
+        flex-direction: row;
+    }
+
+    .non-phone-margin {
+        margin-top: 0;
+    }
+
+    .phonenav {
+        display: none;
+    }
+
+    .pcnav {
+        display: flex;
+    }
+}
+
+.box150 {
+    height: 120px;
+    width: 120px;
+    margin-bottom: -16px;
+}
+
+.icon-border {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid black; 
+    border-radius: 100%;
+}
+
+.icon-border-sb {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid white; 
+    border-radius: 100%;
+}
+
+.box120 {
+    height: 140px;
+    width: 200px
+}
+
+.br-big {
+    border-radius :100px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: hidden;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    transition: right 0.6s ease-in-out;
+    z-index: 10;
+}
+
+.ml8 {
+    margin-left: -50px;
+}
+
+.sidebar-open {
+    display: flex;
+    right: 0;
+}
+
+#closeSidebar {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 1.5rem;
+}
+
+.navbar-gold:hover {
+    color: #fde047;
+    transform: scale(1.1);
+}
+
+.navbar-gold {
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.h700 {
+    height: 700px;
+}
+
+.main-event {
+    background-image: url("./assets/esom_event_eventspage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    transition: all 0.55s ease;
+}
+
+.main-event:hover {
+    transform: translateY(-5px);
+}
+
+.rem17 {
+    font-size: 1.75rem;
+}
+
+.carousel-container {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(80% + 100px);
+}
+
+.selfstarter {
+    align-self: start;
+}
+
+@media (max-width: 1024px) {
+    .selfstarter {
+        align-self: center;
+    }
+}
+
+.carousel-container-container {
+    padding: 20px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(73, 185, 255, 0.15) 0%, rgba(255, 248, 106, 0.15) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: calc(100% - 100px);
+    max-width: 85vw;
+    height: 350px;
+    z-index: 1;
+}
+  
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 14px;
+    position: relative;
+    height: 350px;
+    z-index: 1;
+    padding: 20px 0px;
+}
+  
+.card {
+    flex: 0 0 calc(100% - 14px);
+    color: #fff;
+    text-align: center;
+    border-radius: 40px;
+    height: 325px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    z-index: 99;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 14px);
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        flex: 0 0 calc(33.3333333% - 14px);
+    }
+}
+
+.font-Montserrat {
+    font-family: "Montserrat", serif;
+}
+
+.font-Outfit {
+    font-family: "Outfit", serif;
+}
+
+.arrow {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.65s ease, border 0.65s ease, color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: #0067d5;
+    border: none;
+    color: white;
+}
+
+.card-image {
+    overflow: hidden;
+    border-top-right-radius: 37px;
+    border-top-left-radius: 37px;
+}
+
+.rightIcon, .cardButton {
+    transition: all 0.55s ease;
+}
+
+.card:hover .cardButton {
+    background-color: #0067d5;
+}
+
+.card:hover .rightIcon {
+    color: white;
+}
+
+.line {
+    min-width: 150px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+  
+.close:hover {
+    color: #000;
+}
+
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+.disclaimer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}

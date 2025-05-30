@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.0"
+  },
+  "name": "esom-website",
+  "version": "1.0.0",
+  "main": "events-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Economics-and-Finance-Society-of-MIT/ESOM-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Economics-and-Finance-Society-of-MIT/ESOM-website/issues"
+  },
+  "homepage": "https://github.com/Economics-and-Finance-Society-of-MIT/ESOM-website#readme",
+  "description": ""
+}
