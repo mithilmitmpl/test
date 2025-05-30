@@ -1,0 +1,401 @@
+.phonenav {
+    display: flex;
+}
+
+.pcnav {
+    display: none;
+}
+
+.mr16 {
+    margin-right: 20px;
+}
+
+.ml4 {
+    margin-left: 8px;
+}
+
+.ml8 {
+    margin-left: -50px;
+}
+
+.rem1 {
+    font-size: 1.3rem;
+}
+
+.rem14 {
+    font-size: 1rem;
+}
+
+.rem3 {
+    font-size: 3rem;
+}
+
+.mb24 {
+    margin-bottom: 3rem;
+}
+
+.mt16 {
+    margin-top: 2rem;
+}
+
+.rem085 {
+    font-size: 0.85rem;
+}
+
+.mt24 {
+    margin-top: 1.5rem;
+}
+
+.rem15 {
+    font-size: 1.3rem;
+}
+
+.mt30 {
+    margin-top: 3rem
+}
+
+.grayback {
+    background-color: rgba(205,205,205,0.2);
+}
+
+.center {
+    justify-content: center;
+}
+
+.hero-head {
+    font-size: 2.5rem;
+}
+
+.width90 {
+    width: 90vw;
+}
+
+.width85 {
+    width: 85vw;
+}
+
+.rem12 {
+    font-size: 1.2rem;
+}
+
+.footer-list {
+    margin-top: 6px;
+}
+
+.footer-list-item {
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.footer-list-item:hover {
+    color: black;
+}
+
+.rowcol {
+    flex-direction: column;
+}
+
+@media (min-width: 769px) {
+
+    .center {
+        justify-content: space-between;
+    }
+
+    .hero-head {
+        font-size: 3rem;
+    }
+
+    .rowcol {
+        flex-direction: row;
+    }
+
+    .non-phone-margin {
+        margin-top: 0;
+    }
+
+    .phonenav {
+        display: none;
+    }
+
+    .pcnav {
+        display: flex;
+    }
+}
+
+.box150 {
+    height: 120px;
+    width: 120px;
+    margin-bottom: -16px;
+}
+
+.icon-border {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid black; 
+    border-radius: 100%;
+}
+
+.icon-border-sb {
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid white; 
+    border-radius: 100%;
+}
+
+.box120 {
+    height: 140px;
+    width: 200px
+}
+
+.br-big {
+    border-radius :100px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: hidden;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    transition: right 0.6s ease-in-out;
+    z-index: 10;
+}
+
+.ml8 {
+    margin-left: -50px;
+}
+
+.sidebar-open {
+    display: flex;
+    right: 0;
+}
+
+#closeSidebar {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 1.5rem;
+}
+
+.navbar-gold:hover {
+    color: #fde047;
+    transform: scale(1.1);
+}
+
+.navbar-gold {
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.h700 {
+    height: 700px;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    height: 700px;
+    background-image: url(./assets/esom_team_black.png);
+    background-size: cover;
+    z-index: -1;
+}
+
+.mr16 {
+    margin-right: 20px;
+}
+
+.hero-sec {
+    width: 100%;
+    height: 600px;
+}
+
+.mt40 {
+    margin-top: 10rem;
+}
+
+:root {
+    --cards: 5;
+    --cardHeight: 87vh;
+    --cardTopPadding: 1.5em;
+    --cardMargin : 4vw;
+}
+
+.container {
+    width: 100%;
+}
+
+#cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards)), var(--cardHeight);
+    gap: var(--cardMargin);
+    padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+    margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+    --index: 1;
+}
+#card2 {
+    --index: 2;
+}
+#card3 {
+    --index: 3;
+}
+#card4 {
+    --index: 4;
+}
+#card5 {
+    --index: 5;
+}
+
+.card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+    background-color: black;
+}
+
+#card2 .card-body {
+    background-color: white;
+}
+
+#card3 .card-body {
+    background-color: black;
+}
+
+#card4 .card-body {
+    background-color: white;
+}
+
+#card5 .card-body {
+    background-color: black;
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80%;
+    width: 95%;
+    gap: 80px;
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.grid-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    border-radius: 16px;
+    padding-top: 20px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 0px rgba(103, 219, 255, 0.5);
+    border: 2px solid #cdcdcd;
+    background-color: transparent;
+}
+
+.font-Montserrat {
+    font-family: "Montserrat", serif;
+}
+
+.font-Outfit {
+    font-family: "Outfit", serif;
+}
+
+.grid-card-pink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    border-radius: 16px;
+    padding-top: 20px;
+    overflow: hidden;
+    box-shadow: 0px 20px 50px 0px rgba(255, 151, 168,0.5);
+    border: 2px solid #cdcdcd;
+    background-color: transparent;
+}
+
+.grid-card-image {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.rem25 {
+    font-size: 2.5rem;
+}
+
+.grid-card-text {
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    bottom: 20%;
+    height: 80%;
+    width: 100%;
+}
+
+.grid-card-text-bg-white {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    bottom: 20%;
+    height: 80%;
+    width: 100%;
+}
+
+.cont-phone {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .cont-phone {
+        display: block;
+    }
+
+    .cont-pc {
+        display: none;
+    }
+}
+
+.selfstarter {
+    align-self: start;
+}
+
+@media (max-width: 1024px) {
+    .selfstarter {
+        align-self: center;
+    }
+}
